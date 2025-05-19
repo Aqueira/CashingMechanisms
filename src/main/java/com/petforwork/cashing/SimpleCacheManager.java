@@ -143,25 +143,21 @@ public class SimpleCacheManager implements CacheManager {
             log.info("auto cleanup expired entries");
         }
 
-        private static class EntryCache {
+        private record EntryCache(Object entryValue, Long expirationTime, Long autoExpireTime) {
             private final static Long MILLIS_PER_MINUTE = 60 * 1000L;
 
-            private final Object entryValue;
-            private final Long expirationTime;
-            private final Long autoExpireTime;
-
-            public EntryCache(Object entryValue, Long expirationTime, Long autoExpireTime) {
+            private EntryCache(Object entryValue, Long expirationTime, Long autoExpireTime) {
                 this.entryValue = entryValue;
-                this.expirationTime = System.currentTimeMillis() + expirationTime;
-                this.autoExpireTime = autoExpireTime;
+                this.expirationTime = System.currentTimeMillis() + expirationTime * MILLIS_PER_MINUTE;
+                this.autoExpireTime = autoExpireTime * MILLIS_PER_MINUTE;
             }
 
             public boolean isExpired() {
-                return System.currentTimeMillis() > expirationTime + MILLIS_PER_MINUTE;
+                return System.currentTimeMillis() > expirationTime;
             }
 
             public boolean isAutoExpired() {
-                return System.currentTimeMillis() > autoExpireTime + MILLIS_PER_MINUTE;
+                return System.currentTimeMillis() > autoExpireTime;
             }
 
             public Object getValue() {

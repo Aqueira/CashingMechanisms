@@ -2158,3 +2158,374 @@ This generated password is for development use only. Your security configuration
 2025-05-19T01:45:59.948+02:00  INFO 25496 --- [PetForWork] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-05-19T01:45:59.950+02:00  INFO 25496 --- [PetForWork] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool - Shutdown initiated...
 2025-05-19T01:45:59.952+02:00  INFO 25496 --- [PetForWork] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool - Shutdown completed.
+2025-05-19T01:57:40.974+02:00  INFO 24008 --- [PetForWork] [main] com.petforwork.PetForWorkApplication     : Starting PetForWorkApplication using Java 23.0.2 with PID 24008 (C:\Users\Aqura\IdeaProjects\CashingMechanisms\target\classes started by Aqura in C:\Users\Aqura\IdeaProjects\CashingMechanisms)
+2025-05-19T01:57:40.977+02:00  INFO 24008 --- [PetForWork] [main] com.petforwork.PetForWorkApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-05-19T01:57:41.042+02:00  INFO 24008 --- [PetForWork] [main] .s.b.d.c.l.DockerComposeLifecycleManager : Using Docker Compose file C:\Users\Aqura\IdeaProjects\CashingMechanisms\compose.yaml
+2025-05-19T01:57:42.571+02:00  INFO 24008 --- [PetForWork] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container cashingmechanisms-postgres-1  Created
+2025-05-19T01:57:42.586+02:00  INFO 24008 --- [PetForWork] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container cashingmechanisms-postgres-1  Starting
+2025-05-19T01:57:42.814+02:00  INFO 24008 --- [PetForWork] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container cashingmechanisms-postgres-1  Started
+2025-05-19T01:57:42.814+02:00  INFO 24008 --- [PetForWork] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container cashingmechanisms-postgres-1  Waiting
+2025-05-19T01:57:43.322+02:00  INFO 24008 --- [PetForWork] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container cashingmechanisms-postgres-1  Healthy
+2025-05-19T01:57:45.007+02:00  INFO 24008 --- [PetForWork] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-19T01:57:45.009+02:00  INFO 24008 --- [PetForWork] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-05-19T01:57:45.051+02:00  INFO 24008 --- [PetForWork] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.petforwork.repositories.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-05-19T01:57:45.052+02:00  INFO 24008 --- [PetForWork] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 0 JDBC repository interfaces.
+2025-05-19T01:57:45.072+02:00  INFO 24008 --- [PetForWork] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-19T01:57:45.073+02:00  INFO 24008 --- [PetForWork] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-19T01:57:45.207+02:00  INFO 24008 --- [PetForWork] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 126 ms. Found 1 JPA repository interface.
+2025-05-19T01:57:45.234+02:00  INFO 24008 --- [PetForWork] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-19T01:57:45.235+02:00  INFO 24008 --- [PetForWork] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-05-19T01:57:45.252+02:00  INFO 24008 --- [PetForWork] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.petforwork.repositories.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-05-19T01:57:45.252+02:00  INFO 24008 --- [PetForWork] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2025-05-19T01:57:46.049+02:00  INFO 24008 --- [PetForWork] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-19T01:57:46.063+02:00  INFO 24008 --- [PetForWork] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-19T01:57:46.063+02:00  INFO 24008 --- [PetForWork] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-19T01:57:46.123+02:00  INFO 24008 --- [PetForWork] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-19T01:57:46.124+02:00  INFO 24008 --- [PetForWork] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1762 ms
+2025-05-19T01:57:46.263+02:00  INFO 24008 --- [PetForWork] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool - Starting...
+2025-05-19T01:57:46.443+02:00  INFO 24008 --- [PetForWork] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool - Added connection org.postgresql.jdbc.PgConnection@c212536
+2025-05-19T01:57:46.446+02:00  INFO 24008 --- [PetForWork] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool - Start completed.
+2025-05-19T01:57:46.575+02:00  INFO 24008 --- [PetForWork] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-19T01:57:46.626+02:00  INFO 24008 --- [PetForWork] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-19T01:57:46.665+02:00  INFO 24008 --- [PetForWork] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-19T01:57:46.989+02:00  INFO 24008 --- [PetForWork] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-19T01:57:47.057+02:00  WARN 24008 --- [PetForWork] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-19T01:57:47.078+02:00  INFO 24008 --- [PetForWork] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-19T01:57:47.485+02:00  INFO 24008 --- [PetForWork] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-19T01:57:47.491+02:00  INFO 24008 --- [PetForWork] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-19T01:57:47.714+02:00  WARN 24008 --- [PetForWork] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [C:\Users\Aqura\IdeaProjects\CashingMechanisms\target\classes\com\petforwork\controllers\UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userService' defined in file [C:\Users\Aqura\IdeaProjects\CashingMechanisms\target\classes\com\petforwork\services\UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userRepository' defined in com.petforwork.repositories.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Not a managed type: class com.petforwork.entities.User
+2025-05-19T01:57:47.714+02:00  INFO 24008 --- [PetForWork] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-19T01:57:47.717+02:00  INFO 24008 --- [PetForWork] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool - Shutdown initiated...
+2025-05-19T01:57:47.721+02:00  INFO 24008 --- [PetForWork] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool - Shutdown completed.
+2025-05-19T01:57:47.723+02:00  INFO 24008 --- [PetForWork] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-05-19T01:57:47.742+02:00  INFO 24008 --- [PetForWork] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-05-19T01:57:47.771+02:00 ERROR 24008 --- [PetForWork] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [C:\Users\Aqura\IdeaProjects\CashingMechanisms\target\classes\com\petforwork\controllers\UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userService' defined in file [C:\Users\Aqura\IdeaProjects\CashingMechanisms\target\classes\com\petforwork\services\UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userRepository' defined in com.petforwork.repositories.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Not a managed type: class com.petforwork.entities.User
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1387) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1224) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1221) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1187) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1122) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.6.jar:6.2.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.6.jar:6.2.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351) ~[spring-boot-3.4.5.jar:3.4.5]
+	at com.petforwork.PetForWorkApplication.main(PetForWorkApplication.java:13) ~[classes/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService' defined in file [C:\Users\Aqura\IdeaProjects\CashingMechanisms\target\classes\com\petforwork\services\UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userRepository' defined in com.petforwork.repositories.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Not a managed type: class com.petforwork.entities.User
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1387) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1224) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1681) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1627) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.6.jar:6.2.6]
+	... 21 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.petforwork.repositories.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Not a managed type: class com.petforwork.entities.User
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1818) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1681) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1627) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.6.jar:6.2.6]
+	... 34 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.petforwork.entities.User
+	at org.hibernate.metamodel.model.domain.internal.JpaMetamodelImpl.managedType(JpaMetamodelImpl.java:223) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.metamodel.model.domain.internal.MappingMetamodelImpl.managedType(MappingMetamodelImpl.java:470) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.metamodel.model.domain.internal.MappingMetamodelImpl.managedType(MappingMetamodelImpl.java:100) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.<init>(JpaMetamodelEntityInformation.java:82) ~[spring-data-jpa-3.4.5.jar:3.4.5]
+	at org.springframework.data.jpa.repository.support.JpaEntityInformationSupport.getEntityInformation(JpaEntityInformationSupport.java:69) ~[spring-data-jpa-3.4.5.jar:3.4.5]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getEntityInformation(JpaRepositoryFactory.java:251) ~[spring-data-jpa-3.4.5.jar:3.4.5]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:215) ~[spring-data-jpa-3.4.5.jar:3.4.5]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:198) ~[spring-data-jpa-3.4.5.jar:3.4.5]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:1) ~[spring-data-jpa-3.4.5.jar:3.4.5]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:377) ~[spring-data-commons-3.4.5.jar:3.4.5]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$4(RepositoryFactoryBeanSupport.java:350) ~[spring-data-commons-3.4.5.jar:3.4.5]
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:135) ~[spring-data-commons-3.4.5.jar:3.4.5]
+	at org.springframework.data.util.Lazy.get(Lazy.java:113) ~[spring-data-commons-3.4.5.jar:3.4.5]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:356) ~[spring-data-commons-3.4.5.jar:3.4.5]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:132) ~[spring-data-jpa-3.4.5.jar:3.4.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1865) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1814) ~[spring-beans-6.2.6.jar:6.2.6]
+	... 44 common frames omitted
+
+2025-05-19T01:57:58.434+02:00  INFO 20672 --- [PetForWork] [main] com.petforwork.PetForWorkApplication     : Starting PetForWorkApplication using Java 23.0.2 with PID 20672 (C:\Users\Aqura\IdeaProjects\CashingMechanisms\target\classes started by Aqura in C:\Users\Aqura\IdeaProjects\CashingMechanisms)
+2025-05-19T01:57:58.436+02:00  INFO 20672 --- [PetForWork] [main] com.petforwork.PetForWorkApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-05-19T01:57:58.503+02:00  INFO 20672 --- [PetForWork] [main] .s.b.d.c.l.DockerComposeLifecycleManager : Using Docker Compose file C:\Users\Aqura\IdeaProjects\CashingMechanisms\compose.yaml
+2025-05-19T01:58:00.042+02:00  INFO 20672 --- [PetForWork] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container cashingmechanisms-postgres-1  Created
+2025-05-19T01:58:00.059+02:00  INFO 20672 --- [PetForWork] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container cashingmechanisms-postgres-1  Starting
+2025-05-19T01:58:00.372+02:00  INFO 20672 --- [PetForWork] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container cashingmechanisms-postgres-1  Started
+2025-05-19T01:58:00.372+02:00  INFO 20672 --- [PetForWork] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container cashingmechanisms-postgres-1  Waiting
+2025-05-19T01:58:00.877+02:00  INFO 20672 --- [PetForWork] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container cashingmechanisms-postgres-1  Healthy
+2025-05-19T01:58:02.493+02:00  INFO 20672 --- [PetForWork] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-19T01:58:02.495+02:00  INFO 20672 --- [PetForWork] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-05-19T01:58:02.523+02:00  INFO 20672 --- [PetForWork] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.petforwork.repositories.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-05-19T01:58:02.524+02:00  INFO 20672 --- [PetForWork] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 0 JDBC repository interfaces.
+2025-05-19T01:58:02.537+02:00  INFO 20672 --- [PetForWork] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-19T01:58:02.538+02:00  INFO 20672 --- [PetForWork] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-19T01:58:02.635+02:00  INFO 20672 --- [PetForWork] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93 ms. Found 1 JPA repository interface.
+2025-05-19T01:58:02.649+02:00  INFO 20672 --- [PetForWork] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-19T01:58:02.650+02:00  INFO 20672 --- [PetForWork] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-05-19T01:58:02.660+02:00  INFO 20672 --- [PetForWork] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.petforwork.repositories.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-05-19T01:58:02.660+02:00  INFO 20672 --- [PetForWork] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2025-05-19T01:58:03.243+02:00  INFO 20672 --- [PetForWork] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-19T01:58:03.255+02:00  INFO 20672 --- [PetForWork] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-19T01:58:03.255+02:00  INFO 20672 --- [PetForWork] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-19T01:58:03.310+02:00  INFO 20672 --- [PetForWork] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-19T01:58:03.310+02:00  INFO 20672 --- [PetForWork] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1397 ms
+2025-05-19T01:58:03.417+02:00  INFO 20672 --- [PetForWork] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool - Starting...
+2025-05-19T01:58:03.545+02:00  INFO 20672 --- [PetForWork] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool - Added connection org.postgresql.jdbc.PgConnection@1e120628
+2025-05-19T01:58:03.547+02:00  INFO 20672 --- [PetForWork] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool - Start completed.
+2025-05-19T01:58:03.627+02:00  INFO 20672 --- [PetForWork] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-19T01:58:03.671+02:00  INFO 20672 --- [PetForWork] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-19T01:58:03.699+02:00  INFO 20672 --- [PetForWork] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-19T01:58:03.936+02:00  INFO 20672 --- [PetForWork] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-19T01:58:03.983+02:00  WARN 20672 --- [PetForWork] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-19T01:58:03.997+02:00  INFO 20672 --- [PetForWork] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-19T01:58:04.684+02:00  INFO 20672 --- [PetForWork] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-19T01:58:04.727+02:00  INFO 20672 --- [PetForWork] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-19T01:58:05.229+02:00  WARN 20672 --- [PetForWork] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-19T01:58:05.287+02:00  WARN 20672 --- [PetForWork] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ca76f0ce-e804-4820-8a37-3de739cda542
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-19T01:58:05.318+02:00  INFO 20672 --- [PetForWork] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-19T01:58:05.516+02:00 DEBUG 20672 --- [PetForWork] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2025-05-19T01:58:05.621+02:00 DEBUG 20672 --- [PetForWork] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-05-19T01:58:05.763+02:00 DEBUG 20672 --- [PetForWork] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-05-19T01:58:05.810+02:00 DEBUG 20672 --- [PetForWork] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-05-19T01:58:06.377+02:00  INFO 20672 --- [PetForWork] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-19T01:58:06.379+02:00 DEBUG 20672 --- [PetForWork] [main] o.s.d.r.l.RedisMessageListenerContainer  : Starting RedisMessageListenerContainer...
+2025-05-19T01:58:06.380+02:00 DEBUG 20672 --- [PetForWork] [main] o.s.d.r.l.RedisMessageListenerContainer  : Postpone listening for Redis messages until actual listeners are added
+2025-05-19T01:58:06.386+02:00  INFO 20672 --- [PetForWork] [main] com.petforwork.PetForWorkApplication     : Started PetForWorkApplication in 8.416 seconds (process running for 9.185)
+2025-05-19T01:58:11.400+02:00  INFO 20672 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-19T01:58:11.400+02:00  INFO 20672 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-19T01:58:11.400+02:00 DEBUG 20672 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-05-19T01:58:11.400+02:00 DEBUG 20672 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-05-19T01:58:11.400+02:00 DEBUG 20672 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-05-19T01:58:11.401+02:00 DEBUG 20672 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7cd239f6
+2025-05-19T01:58:11.402+02:00 DEBUG 20672 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@130a99fe
+2025-05-19T01:58:11.402+02:00 DEBUG 20672 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-05-19T01:58:11.402+02:00  INFO 20672 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-05-19T01:58:11.433+02:00 DEBUG 20672 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/user/api/get?id=1", parameters={masked}
+2025-05-19T01:58:11.434+02:00 DEBUG 20672 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.petforwork.controllers.UserController#getUser(Long)
+2025-05-19T01:58:11.485+02:00 DEBUG 20672 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.user_id,
+        u1_0.age,
+        u1_0.name 
+    from
+        users u1_0 
+    where
+        u1_0.user_id=?
+2025-05-19T01:58:11.510+02:00 DEBUG 20672 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Failed to complete request: org.springframework.security.core.userdetails.UsernameNotFoundException: User not found
+2025-05-19T01:58:11.537+02:00 DEBUG 20672 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error?id=1", parameters={masked}
+2025-05-19T01:58:11.538+02:00 DEBUG 20672 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-05-19T01:58:11.552+02:00 DEBUG 20672 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-05-19T01:58:11.553+02:00 DEBUG 20672 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Mon May 19 01:58:11 CEST 2025, status=403, error=Forbidden, path=/user/api/get}]
+2025-05-19T01:58:11.570+02:00 DEBUG 20672 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 403
+2025-05-19T01:58:18.403+02:00 DEBUG 20672 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/user/api/get?id=1", parameters={masked}
+2025-05-19T01:58:18.410+02:00 DEBUG 20672 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.petforwork.controllers.UserController#getUser(Long)
+2025-05-19T01:58:18.412+02:00 DEBUG 20672 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        u1_0.user_id,
+        u1_0.age,
+        u1_0.name 
+    from
+        users u1_0 
+    where
+        u1_0.user_id=?
+2025-05-19T01:58:18.414+02:00 DEBUG 20672 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Failed to complete request: org.springframework.security.core.userdetails.UsernameNotFoundException: User not found
+2025-05-19T01:58:18.425+02:00 DEBUG 20672 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error?id=1", parameters={masked}
+2025-05-19T01:58:18.425+02:00 DEBUG 20672 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-05-19T01:58:18.425+02:00 DEBUG 20672 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-05-19T01:58:18.425+02:00 DEBUG 20672 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Mon May 19 01:58:18 CEST 2025, status=403, error=Forbidden, path=/user/api/get}]
+2025-05-19T01:58:18.431+02:00 DEBUG 20672 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 403
+2025-05-19T01:59:02.845+02:00 DEBUG 20672 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/user/api/create", parameters={}
+2025-05-19T01:59:02.848+02:00 DEBUG 20672 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.petforwork.controllers.UserController#create(User)
+2025-05-19T01:59:02.859+02:00 DEBUG 20672 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [User(id=null, name=test, age=92)]
+2025-05-19T01:59:02.878+02:00 DEBUG 20672 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-4] org.hibernate.SQL                        : 
+    insert 
+    into
+        users
+        (age, name) 
+    values
+        (?, ?)
+2025-05-19T01:59:02.905+02:00 DEBUG 20672 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-05-19T01:59:02.906+02:00 DEBUG 20672 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [User(id=1, name=test, age=92)]
+2025-05-19T01:59:02.910+02:00 DEBUG 20672 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-05-19T01:59:06.539+02:00 DEBUG 20672 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/user/api/get?id=1", parameters={masked}
+2025-05-19T01:59:06.543+02:00 DEBUG 20672 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.petforwork.controllers.UserController#getUser(Long)
+2025-05-19T01:59:06.544+02:00 DEBUG 20672 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        u1_0.user_id,
+        u1_0.age,
+        u1_0.name 
+    from
+        users u1_0 
+    where
+        u1_0.user_id=?
+2025-05-19T01:59:06.549+02:00 DEBUG 20672 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-05-19T01:59:06.549+02:00 DEBUG 20672 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [User(id=1, name=test, age=92)]
+2025-05-19T01:59:06.553+02:00 DEBUG 20672 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-05-19T01:59:49.149+02:00 DEBUG 20672 --- [PetForWork] [SpringApplicationShutdownHook] o.s.d.r.l.RedisMessageListenerContainer  : Stopped RedisMessageListenerContainer
+2025-05-19T01:59:49.150+02:00  INFO 20672 --- [PetForWork] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-19T01:59:49.156+02:00  INFO 20672 --- [PetForWork] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-19T01:59:49.172+02:00  INFO 20672 --- [PetForWork] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-19T01:59:49.173+02:00  INFO 20672 --- [PetForWork] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool - Shutdown initiated...
+2025-05-19T01:59:49.176+02:00  INFO 20672 --- [PetForWork] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool - Shutdown completed.
+2025-05-19T01:59:54.743+02:00  INFO 9272 --- [PetForWork] [main] com.petforwork.PetForWorkApplication     : Starting PetForWorkApplication using Java 23.0.2 with PID 9272 (C:\Users\Aqura\IdeaProjects\CashingMechanisms\target\classes started by Aqura in C:\Users\Aqura\IdeaProjects\CashingMechanisms)
+2025-05-19T01:59:54.745+02:00  INFO 9272 --- [PetForWork] [main] com.petforwork.PetForWorkApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-05-19T01:59:54.808+02:00  INFO 9272 --- [PetForWork] [main] .s.b.d.c.l.DockerComposeLifecycleManager : Using Docker Compose file C:\Users\Aqura\IdeaProjects\CashingMechanisms\compose.yaml
+2025-05-19T01:59:56.346+02:00  INFO 9272 --- [PetForWork] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container cashingmechanisms-postgres-1  Created
+2025-05-19T01:59:56.362+02:00  INFO 9272 --- [PetForWork] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container cashingmechanisms-postgres-1  Starting
+2025-05-19T01:59:56.632+02:00  INFO 9272 --- [PetForWork] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container cashingmechanisms-postgres-1  Started
+2025-05-19T01:59:56.632+02:00  INFO 9272 --- [PetForWork] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container cashingmechanisms-postgres-1  Waiting
+2025-05-19T01:59:57.147+02:00  INFO 9272 --- [PetForWork] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container cashingmechanisms-postgres-1  Healthy
+2025-05-19T01:59:58.763+02:00  INFO 9272 --- [PetForWork] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-19T01:59:58.764+02:00  INFO 9272 --- [PetForWork] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-05-19T01:59:58.793+02:00  INFO 9272 --- [PetForWork] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.petforwork.repositories.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-05-19T01:59:58.794+02:00  INFO 9272 --- [PetForWork] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 0 JDBC repository interfaces.
+2025-05-19T01:59:58.803+02:00  INFO 9272 --- [PetForWork] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-19T01:59:58.809+02:00  INFO 9272 --- [PetForWork] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-19T01:59:58.907+02:00  INFO 9272 --- [PetForWork] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93 ms. Found 1 JPA repository interface.
+2025-05-19T01:59:58.921+02:00  INFO 9272 --- [PetForWork] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-19T01:59:58.922+02:00  INFO 9272 --- [PetForWork] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-05-19T01:59:58.932+02:00  INFO 9272 --- [PetForWork] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.petforwork.repositories.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-05-19T01:59:58.932+02:00  INFO 9272 --- [PetForWork] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2025-05-19T01:59:59.516+02:00  INFO 9272 --- [PetForWork] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-19T01:59:59.528+02:00  INFO 9272 --- [PetForWork] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-19T01:59:59.530+02:00  INFO 9272 --- [PetForWork] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-19T01:59:59.581+02:00  INFO 9272 --- [PetForWork] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-19T01:59:59.581+02:00  INFO 9272 --- [PetForWork] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1398 ms
+2025-05-19T01:59:59.688+02:00  INFO 9272 --- [PetForWork] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool - Starting...
+2025-05-19T01:59:59.815+02:00  INFO 9272 --- [PetForWork] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool - Added connection org.postgresql.jdbc.PgConnection@3bd08435
+2025-05-19T01:59:59.816+02:00  INFO 9272 --- [PetForWork] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool - Start completed.
+2025-05-19T01:59:59.898+02:00  INFO 9272 --- [PetForWork] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-19T01:59:59.943+02:00  INFO 9272 --- [PetForWork] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-19T01:59:59.970+02:00  INFO 9272 --- [PetForWork] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-19T02:00:00.196+02:00  INFO 9272 --- [PetForWork] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-19T02:00:00.238+02:00  WARN 9272 --- [PetForWork] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-19T02:00:00.251+02:00  INFO 9272 --- [PetForWork] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-19T02:00:00.900+02:00  INFO 9272 --- [PetForWork] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-19T02:00:00.943+02:00  INFO 9272 --- [PetForWork] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-19T02:00:01.400+02:00  WARN 9272 --- [PetForWork] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-19T02:00:01.424+02:00  WARN 9272 --- [PetForWork] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 29da7287-448f-4124-996c-24a80e59328e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-19T02:00:01.437+02:00  INFO 9272 --- [PetForWork] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-19T02:00:01.552+02:00 DEBUG 9272 --- [PetForWork] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2025-05-19T02:00:01.648+02:00 DEBUG 9272 --- [PetForWork] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-05-19T02:00:01.776+02:00 DEBUG 9272 --- [PetForWork] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-05-19T02:00:01.820+02:00 DEBUG 9272 --- [PetForWork] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-05-19T02:00:02.343+02:00  INFO 9272 --- [PetForWork] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-19T02:00:02.344+02:00 DEBUG 9272 --- [PetForWork] [main] o.s.d.r.l.RedisMessageListenerContainer  : Starting RedisMessageListenerContainer...
+2025-05-19T02:00:02.345+02:00 DEBUG 9272 --- [PetForWork] [main] o.s.d.r.l.RedisMessageListenerContainer  : Postpone listening for Redis messages until actual listeners are added
+2025-05-19T02:00:02.351+02:00  INFO 9272 --- [PetForWork] [main] com.petforwork.PetForWorkApplication     : Started PetForWorkApplication in 8.023 seconds (process running for 8.633)
+2025-05-19T02:00:07.293+02:00  INFO 9272 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-19T02:00:07.293+02:00  INFO 9272 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-19T02:00:07.293+02:00 DEBUG 9272 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-05-19T02:00:07.293+02:00 DEBUG 9272 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-05-19T02:00:07.294+02:00 DEBUG 9272 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-05-19T02:00:07.294+02:00 DEBUG 9272 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5c85ed05
+2025-05-19T02:00:07.295+02:00 DEBUG 9272 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@65630116
+2025-05-19T02:00:07.295+02:00 DEBUG 9272 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-05-19T02:00:07.295+02:00  INFO 9272 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-05-19T02:00:07.322+02:00 DEBUG 9272 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/user/api/get?id=1", parameters={masked}
+2025-05-19T02:00:07.340+02:00 DEBUG 9272 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.petforwork.controllers.UserController#getUser(Long)
+2025-05-19T02:00:07.382+02:00 DEBUG 9272 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.user_id,
+        u1_0.age,
+        u1_0.name 
+    from
+        users u1_0 
+    where
+        u1_0.user_id=?
+2025-05-19T02:00:07.423+02:00 DEBUG 9272 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-05-19T02:00:07.424+02:00 DEBUG 9272 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [User(id=1, name=test, age=92)]
+2025-05-19T02:00:07.447+02:00 DEBUG 9272 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-05-19T02:01:01.357+02:00  INFO 9272 --- [PetForWork] [pool-3-thread-1] c.petforwork.cashing.SimpleCacheManager  : Running expired caches cleanup
+2025-05-19T02:01:01.357+02:00  INFO 9272 --- [PetForWork] [pool-3-thread-1] c.petforwork.cashing.SimpleCacheManager  : auto cleanup expired entries
+2025-05-19T02:01:05.001+02:00 DEBUG 9272 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/user/api/get?id=1", parameters={masked}
+2025-05-19T02:01:05.005+02:00 DEBUG 9272 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.petforwork.controllers.UserController#getUser(Long)
+2025-05-19T02:01:05.007+02:00 DEBUG 9272 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        u1_0.user_id,
+        u1_0.age,
+        u1_0.name 
+    from
+        users u1_0 
+    where
+        u1_0.user_id=?
+2025-05-19T02:01:05.010+02:00 DEBUG 9272 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-05-19T02:01:05.010+02:00 DEBUG 9272 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [User(id=1, name=test, age=92)]
+2025-05-19T02:01:05.016+02:00 DEBUG 9272 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-05-19T02:01:08.731+02:00 DEBUG 9272 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/user/api/get?id=1", parameters={masked}
+2025-05-19T02:01:08.736+02:00 DEBUG 9272 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.petforwork.controllers.UserController#getUser(Long)
+2025-05-19T02:01:08.737+02:00 DEBUG 9272 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-05-19T02:01:08.737+02:00 DEBUG 9272 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [User(id=1, name=test, age=92)]
+2025-05-19T02:01:08.744+02:00 DEBUG 9272 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-05-19T02:01:09.869+02:00 DEBUG 9272 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/user/api/get?id=1", parameters={masked}
+2025-05-19T02:01:09.873+02:00 DEBUG 9272 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.petforwork.controllers.UserController#getUser(Long)
+2025-05-19T02:01:09.874+02:00 DEBUG 9272 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-05-19T02:01:09.874+02:00 DEBUG 9272 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [User(id=1, name=test, age=92)]
+2025-05-19T02:01:09.882+02:00 DEBUG 9272 --- [PetForWork] [http-nio-0.0.0.0-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-05-19T02:01:12.048+02:00 DEBUG 9272 --- [PetForWork] [SpringApplicationShutdownHook] o.s.d.r.l.RedisMessageListenerContainer  : Stopped RedisMessageListenerContainer
+2025-05-19T02:01:12.049+02:00  INFO 9272 --- [PetForWork] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-19T02:01:12.056+02:00  INFO 9272 --- [PetForWork] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-19T02:01:12.070+02:00  INFO 9272 --- [PetForWork] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-19T02:01:12.072+02:00  INFO 9272 --- [PetForWork] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool - Shutdown initiated...
+2025-05-19T02:01:12.073+02:00  INFO 9272 --- [PetForWork] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool - Shutdown completed.

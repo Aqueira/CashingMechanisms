@@ -20,8 +20,8 @@ import java.util.concurrent.TimeUnit;
 
 @Configuration
 public class CashingConfiguration {
-    private final static Long DEFAULT_EXPIRED_TIME = 1L;
-    private final static Long DEFAULT_AUTO_EXPIRED_TIME = 5L;
+    private final static Long DEFAULT_EXPIRED_TIME = 5L;
+    private final static Long DEFAULT_AUTO_EXPIRED_TIME = 1L;
 
     @Bean("caffeine")
     public CacheManager caffeineCacheManager() {
