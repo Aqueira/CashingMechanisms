@@ -31,7 +31,7 @@ public class SimpleCacheManager implements CacheManager {
 
     @Override
     public Cache getCache(String name) {
-        return caches.computeIfAbsent(name, key -> new SimpleCache(name, ttlTime, cleanupTime));
+        return caches.computeIfAbsent(name, value -> new SimpleCache(name, ttlTime, cleanupTime));
     }
 
     @Override
